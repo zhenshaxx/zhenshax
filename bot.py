@@ -58,7 +58,7 @@ async def leet():
 
 	@client.event
 async def onready():
-await client.change_status(game=discord.Game(name="with ZhensHax#2836", type=1))
+await client.change_status(game=discord.Game(name='with ZhensHax#2836'))
 		
 @client.command()
 async def howgay( *args):
