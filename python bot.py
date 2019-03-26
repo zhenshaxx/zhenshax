@@ -97,4 +97,4 @@ async def ping(ctx):
 	
 	
     
-client.run(str(os.environ.get('NTYwMDA1NTM1OTk1MjY1MDM0.D3tptA.Bbd-WwbsIgqXWm_Yt9sSX_zmoGA')))
+client.run(str(os.environ.get('TOKEN')))
