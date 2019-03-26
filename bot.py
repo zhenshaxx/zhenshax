@@ -4,9 +4,8 @@ from discord.ext.commands import bot
 import asyncio
 import random
 
-my_token = 'NTYwMDA1NTM1OTk1MjY1MDM0.D3tptA.Bbd-WwbsIgqXWm_Yt9sSX_zmoGA'
-
 client = commands.Bot(command_prefix='.')
+player_dict = dict()
 
 def has_permissions(ctx):
 	return ctx.message.author.server_permissions.administrator
@@ -98,4 +97,4 @@ async def ping(ctx):
 	
 	
     
-client.run('NTYwMDA1NTM1OTk1MjY1MDM0.D3tptA.Bbd-WwbsIgqXWm_Yt9sSX_zmoGA')
+client.run(str(os.environ.get('NTYwMDA1NTM1OTk1MjY1MDM0.D3tptA.Bbd-WwbsIgqXWm_Yt9sSX_zmoGA')))
