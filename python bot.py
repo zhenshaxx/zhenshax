@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import asyncio
 import random
+import os
 
 client = commands.Bot(command_prefix='.')
 player_dict = dict()
