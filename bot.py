@@ -40,7 +40,6 @@ async def say(ctx, *, msg: str):
       
 @client.command(pass_context = True)
 async def clear(ctx, amount):
-
     channel = ctx.message.channel
 
     messages = []
@@ -62,7 +61,7 @@ async def donate():
 	await client.say('Support the developer by donating here: https://paypal.me/zhenshax, Thank you.')
     
 @client.event
-async def on_ready():	 await client.change_presence(game=discord.Game(name='Playing with ZhensHax#2836'))
+async def on_ready():	 await client.change_presence(game=discord.Game("with ZhensHax#2836","https://www.twitch.tv/ninja")
     
 @client.command()
 async def howgay( *args):
