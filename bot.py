@@ -55,12 +55,8 @@ async def clear(ctx, amount):
 @client.command()
 async def leet():
 	await client.say('ZhensHax, LaYellow, and GDNXDD is 1337 ok, cuz we kill Reg4shi 24/7')
-
-	@client.event
-async def onready():
-await client.change_status(game=discord.Game(name='with ZhensHax#2836'))
-		
-@client.command()
+	
+	@client.command()
 async def howgay( *args):
 	
     g = random.randint(1,100)
