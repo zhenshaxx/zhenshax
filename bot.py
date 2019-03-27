@@ -38,7 +38,7 @@ async def say(ctx, *, msg: str):
       
 @client.command(pass_context = True)
 async def clear(ctx, amount):
-    channel = ctx.message.channel
+    channel = ctx.messages.channel
 
     messages = []
 
@@ -104,6 +104,13 @@ async def howretard( *args):
     for word in args:
         output += word
     await client.say('**{} {} {}% retard.** '.format(output, areis ,g))
+
+@client.command(pass_context = True)
+async def fban(ctx,user:discord.Member):
+	await client.say('**{} has been successfully banned.**')
+	
+
+
 		
 	
 
