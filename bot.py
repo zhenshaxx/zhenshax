@@ -107,8 +107,7 @@ async def howretard( *args):
 
 @client.command(pass_context = True)
 async def fban(ctx,user:discord.Member):
-	await client.fban(user)
-	await client.say('**{} has been successfully banned.**')
+	await client.say('**User has been successfully banned.**')
 	
 
 
