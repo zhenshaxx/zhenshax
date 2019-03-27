@@ -90,7 +90,35 @@ async def ping(ctx):
 @client.event
 async def on_ready():
 	await client.change_presence(game=discord.Game(name='with ZhensHax#2836 | .help', type = 1))
-
+	
+	
+@client.command()
+async def dice( *args):
+	
+    g = random.randint(1,6)
+    output = ''
+    if str(args) == '()':
+        args = 'You'
+        areis = 'got'
+    else:
+        areis = 'is'
+    for word in args:
+        output += word
+    await client.say('{} {} {}'.format(output, areis ,g))
+    
+@client.command()
+async def howretard( *args):
+	
+    g = random.randint(1,100)
+    output = ''
+    if str(args) == '()':
+        args = 'You'
+        areis = 'are'
+    else:
+        areis = 'is'
+    for word in args:
+        output += word
+    await client.say('**{} {} {}% retard.** '.format(output, areis ,g))
 
     
 client.run(str(os.environ.get('TOKEN')))
