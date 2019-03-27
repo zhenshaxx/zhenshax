@@ -53,7 +53,7 @@ async def clear(ctx, amount):
 async def leet():
 	await client.say('ZhensHax, LaYellow, and GDNXDD is 1337 ok, cuz we kill Reg4shi 24/7')
 	
-	@client.command()
+@client.command()
 async def howgay( *args):
 	
     g = random.randint(1,100)
