@@ -89,7 +89,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='PewDiePie VS T-Series | .help', type = 2))
+	await client.change_presence(game=discord.Game(name='bitch lasagna | .help', type = 2))
 	
 @client.command()
 async def howretard( *args):
