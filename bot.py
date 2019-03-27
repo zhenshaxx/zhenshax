@@ -87,10 +87,6 @@ async def ping(ctx):
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
     await client.edit_message(t, new_content='My heart is {}ms'.format(int(ms)))
 
-@client.command()
-async def invite():
-    """Bot Invite"""
-    await client.say('Please check your DMs')
-    await client.whisper("Add me with this link {}".format(discord.utils.oauth_url(bot.user.id)))
+
     
 client.run(str(os.environ.get('TOKEN')))
