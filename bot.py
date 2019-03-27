@@ -21,8 +21,8 @@ async def sub():
 	await client.say('Go to this link and subscribe to PewDiePie. https://youtube.com/pewdiepie')
 	
 @client.command()
-async def whoisdev():
-	await client.say('```The developer is ZhensHax#2836.```')
+async def developer():
+	await client.say('```The developer is ZhensHax#2836, some fixes by LaYellow#9207.```')
 	
 @client.command()
 async def devinfo():
