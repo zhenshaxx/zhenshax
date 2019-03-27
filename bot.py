@@ -86,6 +86,10 @@ async def ping(ctx):
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
     await client.edit_message(t, new_content='My heart is {}ms'.format(int(ms)))
 
+@client.event
+async def on_ready():
+	await client.change_presence(game=discord.Game(name='with ZhensHax#2836 | .help'))
+
 
     
 client.run(str(os.environ.get('TOKEN')))
