@@ -14,9 +14,6 @@ def has_permissions(ctx):
 @client.event
 async def on_ready():
 	print('The bot is online and connected to discord!') 
-	print(bot.user.name)
-	print(bot.user.id)
-	print('-------')
 
 @client.command()
 async def sub():
