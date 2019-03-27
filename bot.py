@@ -89,7 +89,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='with ZhensHax#2836 .help', type = 1))
+	await client.change_presence(game=discord.Game(name='with ZhensHax#2836 .help')
 	
 @client.command()
 async def howretard( *args):
