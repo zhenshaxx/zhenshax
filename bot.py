@@ -38,7 +38,7 @@ async def say(ctx, *, msg: str):
       
 @client.command(pass_context = True)
 async def clear(ctx, amount):
-    channel = ctx.messages.channel
+    channel = ctx.message.channel
 
     messages = []
 
