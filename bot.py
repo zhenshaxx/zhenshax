@@ -84,7 +84,10 @@ async def ping(ctx):
     t = await client.say('Pong!')
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
     await client.edit_message(t, new_content='My heart is {}ms'.format(int(ms)))
-	
+
+@client.command(pass_context=True, hidden=True)
+async def setname(ctx, *, name):
+    await client.edit_profile(username=name)
 	
     
 client.run(str(os.environ.get('TOKEN')))
