@@ -26,11 +26,11 @@ async def developer():
 	
 @client.command()
 async def info(ctx):
-     embed = discord.Embed(title="Bot name", description="ZhensHaxBot#6965", color=0xeee657)
+     embed = discord.Embed(title='Bot name', description='ZhensHaxBot#6965', color=0xeee657)
      
-     embed.add_field(name="Developer", value="ZhensHax#7992")
+     embed.add_field(name='Developer', value='ZhensHax#7992')
 
-     embed.add_field(name="Server Member Count", value=f"{len(bot.guilds)}")
+     embed.add_field(name='Server Member Count', value=f'{len(bot.guilds)}')
 
      await ctx.send(embed=embed)
 
@@ -54,7 +54,7 @@ async def clear(ctx, amount):
 
     await client.delete_messages(messages)
 
-    await client.say(str(amount) + 'message deleted expose ass')
+    await client.say(str(amount) + ' message deleted expose ass')
     
 @client.command()
 async def leet():
