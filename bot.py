@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='porn movies at pornhub.com', type = 3))
+	await client.change_presence(game=discord.Game(name='pdp video for 24 hours', type = 3))
 	
 	
 @client.command()
