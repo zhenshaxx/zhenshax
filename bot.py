@@ -27,7 +27,7 @@ async def developer():
 @client.command()
 async def info():
      await client.say('```Developer: ZhensHax#7992. this most kanser bot in world```')
-     await client.say('```my owner mad cuz me is kanser me orang bgst wait a sec me is not orang')
+     await client.say('```my owner mad cuz me is kanser me orang bgst wait a sec me is not orang so mean me bot yg kanset```')
    
 
 @client.command()
