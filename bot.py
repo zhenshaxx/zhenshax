@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='heroku.com run bot 24/7 use .help', type = 1))
+	await client.change_presence(game=discord.Game(name='porn movies at pornhub.com', type = 2))
 	
 	
 @client.command()
