@@ -22,11 +22,11 @@ async def sub():
 	
 @client.command()
 async def developer():
-	await client.say('```The developer is ZhensHax#2836, some fixes by LaYellow#9207.```')
+	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#9207.```')
 	
 @client.command()
 async def devinfo():
-	await client.say('```Developer discord: ZhensHax#2836. Developer Youtube Channel: ZhensHax GT.```')
+	await client.say('```Developer discord: ZhensHax#7992. Developer Youtube Channel: ZhensHax GT.```')
     
 @client.command()
 async def prefix():
@@ -89,7 +89,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='with ZhensHax#2836 .help', type = 1))
+	await client.change_presence(game=discord.Game(name='with ZhensHax#7992 .help', type = 1))
 	
 	
 @client.command()
