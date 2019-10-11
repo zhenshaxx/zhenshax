@@ -22,10 +22,10 @@ async def sub():
 	
 @client.command()
 async def developer():
-	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#4241.```')
+	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#4241. © Bot by ZhensHax#7992 & LaYellow#4241```')
 	
 @client.command()
-async def info(ctx):
+async def info():
      await client.say('```Developer: ZhensHax#7992. this most kanser bot in world```')
      await client.say('```my owner mad cuz me is kanser me orang bgst wait a sec me is not orang')
    
