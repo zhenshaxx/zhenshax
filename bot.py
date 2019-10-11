@@ -110,13 +110,6 @@ async def howretard( *args):
 async def fban(ctx,user:discord.Member):
 	await client.say('**User has been successfully banned.**')
 
-@client.event
-@commands.check(has_permissions)
-async def on_message(message):
-    if message.content.startswith("i want free nitro")
-    await client.send_message(message.author, "fake lol go spend 5$ to buy one")
-
-
 
 		
 	
