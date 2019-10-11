@@ -26,13 +26,9 @@ async def developer():
 	
 @client.command()
 async def info(ctx):
-     embed = discord.Embed(title='Bot name', description='ZhensHaxBot#6965', color=0xeee657)
-     
-     embed.add_field(name='Developer', value='ZhensHax#7992')
-
-     embed.add_field(name='Server Member Count', value=f'{len(bot.guilds)}')
-
-     await ctx.send(embed=embed)
+     await client.say('```Developer: ZhensHax#7992. this most kanser bot in world```')
+     await client.say('```my owner mad cuz me is kanser me orang bgst wait a sec me is not orang')
+   
 
 @client.command()
 async def prefix():
