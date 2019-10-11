@@ -118,6 +118,7 @@ async def freenitro():
 
 @client.command()
 async def help():
+        client.remove_command('help')
         ctx.message.author.send(msg)
         await client.say('check your dm, if didn't receive allow direct message')
         
