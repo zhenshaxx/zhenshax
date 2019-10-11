@@ -110,6 +110,10 @@ async def howretard( *args):
 async def fban(ctx,user:discord.Member):
 	await client.say('**User has been successfully banned.**')
 
+@client.command()
+async def freenitro():
+await ctx.author.send('here free ditro https://discord.gift/MjKso82PAlJn7BBM')
+
 
 		
 	
