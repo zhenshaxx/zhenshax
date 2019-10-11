@@ -70,12 +70,18 @@ async def howgay( *args):
     
 @client.command(pass_context = True)
 @commands.check(has_permissions)
+if not ctx.message.author.server_permissions.administrator:
+        return
+await client.say('dont try to use mod command when u dont have permission lol')
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
 	await client.say("Successfully banned {} like pro moms. https://youtube.com/pewdiepie".format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
+if not ctx.message.author.server_permissions.administrator:
+        return
+await client.say('dont try to use mod command when u dont have permission lol')
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
 	await client.say("Successfully kick {} to 荷兰. https://youtube.com/pewdiepie".format(user.name))
@@ -109,17 +115,7 @@ async def howretard( *args):
 @client.command(pass_context = True)
 async def fban(ctx,user:discord.Member):
 	await client.say('**User has been successfully banned.**')
-	
-@client.command(pass_context = True)
-async def dm(ctx, member : discord.Member = None, *, message):
-    if not ctx.message.author.server_permissions.administrator:
-        return
-    if not member:
-        return await client.say(ctx.message.author.mention + "Specify a user to DM!")
-    if member = "@everyone":
-        member = 
-    else:
-        await client.send_message(member, message)
+
 
 		
 	
