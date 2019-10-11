@@ -25,9 +25,15 @@ async def developer():
 	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#4241.```')
 	
 @client.command()
-async def devinfo():
-	await client.say('```Developer discord: ZhensHax#7992. Developer Youtube Channel: Zhens X.```')
-    
+async def info(ctx):
+     embed = discord.Embed(title="Bot name", description="ZhensHaxBot#6965", color=0xeee657)
+     
+     embed.add_field(name="Developer", value="ZhensHax#7992")
+
+     embed.add_field(name="Server Member Count", value=f"{len(bot.guilds)}")
+
+     await ctx.send(embed=embed)
+
 @client.command()
 async def prefix():
 	await client.say('My command prefix is . gk need ask')
