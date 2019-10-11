@@ -30,7 +30,7 @@ async def devinfo():
     
 @client.command()
 async def prefix():
-	await client.say('My command prefix is .')
+	await client.say('My command prefix is . gk need ask')
 	
 @client.command(pass_context = True)
 async def say(ctx, *, msg: str):
@@ -48,7 +48,7 @@ async def clear(ctx, amount):
 
     await client.delete_messages(messages)
 
-    await client.say(str(amount) + ' Message were deleted.')
+    await client.say(str(amount) + 'message deleted expose ass')
     
 @client.command()
 async def leet():
@@ -70,18 +70,12 @@ async def howgay( *args):
     
 @client.command(pass_context = True)
 @commands.check(has_permissions)
-if not ctx.message.author.server_permissions.administrator:
-        return
-await client.say('dont try to use mod command when u dont have permission lol')
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
 	await client.say("Successfully banned {} like pro moms. https://youtube.com/pewdiepie".format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
-if not ctx.message.author.server_permissions.administrator:
-        return
-await client.say('dont try to use mod command when u dont have permission lol')
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
 	await client.say("Successfully kick {} to 荷兰. https://youtube.com/pewdiepie".format(user.name))
