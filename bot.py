@@ -117,10 +117,9 @@ async def freenitro():
         await client.say('here free ditro https://discord.gift/hknMN8777AvJl0 if get redeemed go buy yourself a ditro 5$ or deads')
 
 @client.command()
-async def help():
-        client.remove_command('help')
-        ctx.message.author.send(msg)
-        await client.say('check your dm, if didn't receive allow direct message')
+async def respecto():
+        await client.say('pls respecto owner he nob code me cuz me suck')
+ 
         
 
 		
