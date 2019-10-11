@@ -54,7 +54,7 @@ async def clear(ctx, amount):
     
 @client.command()
 async def leet():
-	await client.say('ZhensHax, LaYellow, and GDNXDD is 1337 ok, cuz we kill Reg4shi 24/7')
+	await client.say('leet soon r3b0rn')
 	
 @client.command()
 async def howgay( *args):
@@ -74,13 +74,13 @@ async def howgay( *args):
 @commands.check(has_permissions)
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
-	await client.say("Successfully banned {} like pro moms. https://youtube.com/pewdiepie".format(user.name))
+	await client.say("Successfully banned {} cuz gay tons".format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
-	await client.say("Successfully kick {} to 荷兰. https://youtube.com/pewdiepie".format(user.name))
+	await client.say("Successfully kick {} to 荷兰 ok bye tons".format(user.name))
 
 @client.command(pass_context=True)
 async def ping(ctx):
