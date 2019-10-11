@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='kntl bot is me wtf', type = 1))
+	await client.change_presence(game=discord.Game(name='heroku.com run bot 24/7 use .help', type = 1))
 	
 	
 @client.command()
