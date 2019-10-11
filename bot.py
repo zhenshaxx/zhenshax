@@ -18,15 +18,15 @@ async def on_ready():
 
 @client.command()
 async def sub():
-	await client.say('Go to this link and subscribe to PewDiePie. https://youtube.com/pewdiepie')
+	await client.say('sub Zhens X or b4n')
 	
 @client.command()
 async def developer():
-	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#9207.```')
+	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#4241.```')
 	
 @client.command()
 async def devinfo():
-	await client.say('```Developer discord: ZhensHax#7992. Developer Youtube Channel: ZhensHax GT.```')
+	await client.say('```Developer discord: ZhensHax#7992. Developer Youtube Channel: Zhens X.```')
     
 @client.command()
 async def prefix():
