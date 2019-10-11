@@ -116,6 +116,11 @@ async def fban(ctx,user:discord.Member):
 async def freenitro():
         await client.say('here free ditro https://discord.gift/hknMN8777AvJl0 if get redeemed go buy yourself a ditro 5$ or deads')
 
+@client.command()
+async def help():
+        ctx.message.author.send(msg)
+        await client.say('check your dm, if didn't receive allow direct message')
+        
 
 		
 	
