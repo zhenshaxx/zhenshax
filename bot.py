@@ -72,13 +72,13 @@ async def howgay( *args):
 @commands.check(has_permissions)
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
-	await client.say("The ancient used ban to {}. https://youtube.com/pewdiepie".format(user.name))
+	await client.say("Successfully banned {} like pro moms. https://youtube.com/pewdiepie".format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
-	await client.say("The ancient used kick to {}. https://youtube.com/pewdiepie".format(user.name))
+	await client.say("Successfully kick {} to 荷兰. https://youtube.com/pewdiepie".format(user.name))
 
 @client.command(pass_context=True)
 async def ping(ctx):
@@ -89,7 +89,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='with ZhensHax#7992 .help', type = 1))
+	await client.change_presence(game=discord.Game(name='with mom and my owner leet', type = 1))
 	
 	
 @client.command()
