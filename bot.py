@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='pdp video for 24 hours', type = 3))
+	await client.change_presence(game=discord.Game(name='leet video 24/7', type = 1))
 	
 	
 @client.command()
@@ -119,6 +119,10 @@ async def freenitro():
 @client.command()
 async def respecto():
         await client.say('pls respecto owner he nob code me cuz me suck')
+
+@client.command()
+async def time():
+        await client.say('GMT +8 Malaysia Time if want Malaysia time now go search google lol noob')
  
         
 
