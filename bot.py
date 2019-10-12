@@ -5,6 +5,7 @@ import asyncio
 import random
 import os
 import time
+import pytz
 
 client = commands.Bot(command_prefix='.')
 player_dict = dict()
