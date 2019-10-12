@@ -126,7 +126,7 @@ async def respecto():
 
 @client.command()
 async def time():
-        await client.say('GMT +8 Malaysia Time if want Malaysia time now go search google lol noob')
+        await client.say('```GMT +8 Malaysia Time.``` If want Malaysia time now go search google lol noob dont ask tons')
  
         
 
