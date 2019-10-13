@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='leet video 24/7', type = 1))
+	await client.change_presence(game=discord.Game(name='enigma "best" gtps raid', type = 1))
 	
 	
 @client.command()
