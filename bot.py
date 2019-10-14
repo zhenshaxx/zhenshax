@@ -127,6 +127,10 @@ async def respecto():
 @client.command()
 async def time():
         await client.say('```GMT +8 Malaysia Time.``` If want Malaysia time now go search google lol noob dont ask tons')
+
+@client.command()
+async def ads():
+        await client say.('Place your Ads here. 1$ per day, 7day/5.8$. Payment method PayPal. ik no one buy so i do this for fun only lol')
  
         
 
