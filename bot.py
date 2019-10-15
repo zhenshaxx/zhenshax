@@ -91,7 +91,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='meme with moms', type = 3))
+	await client.change_presence(game=discord.Game(name='菊花科技', type = 1))
 	
 	
 @client.command()
