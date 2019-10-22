@@ -35,10 +35,6 @@ async def clear(ctx, amount):
     await client.say(str(amount) + ' message deleted'
 
 @client.command()
-async def botdev():
-        await client.say('Bot is created and developed by ZhensHax#7992.')
-
-@client.command()
 async def howgay( *args):
 	
     g = random.randint(1,100)
@@ -70,12 +66,10 @@ async def ping(ctx):
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
     await client.edit_message(t, new_content='{}ms'.format(int(ms)))
 
-
 @client.event
 async def on_ready():
 	await client.change_presence(game=discord.Game(name='Server Status: UP .help', type = 1))
-	
-	
+		
 @client.command()
 async def howretard( *args):
 	
@@ -101,6 +95,10 @@ async def serverstatus():
 @client.command()
 async def purchase():
         await client.say('Check channel #purchase if you wish to purchase anything')
+
+@client.command()
+async def botdev():
+        await client.say('Bot is created and developed by ZhensHax#7992.')
 
  
 
