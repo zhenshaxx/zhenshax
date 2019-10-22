@@ -52,13 +52,13 @@ async def howgay( *args):
 @commands.check(has_permissions)
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
-	await client.say("Successfully banned {} from GrowLatvia Server!".format(user.name))
+	await client.say('Successfully banned {} from GrowLatvia Server!'.format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
-	await client.say("Successfully kick {} from GrowLatvia Server!".format(user.name))
+	await client.say('Successfully kick {} from GrowLatvia Server!'.format(user.name))
 
 @client.command(pass_context=True)
 async def ping(ctx):
