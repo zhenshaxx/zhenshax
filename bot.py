@@ -15,24 +15,6 @@ def has_permissions(ctx):
 @client.event
 async def on_ready():
 	print('The bot is online and connected to discord!') 
-
-@client.command()
-async def sub():
-	await client.say('sub Zhens X or b4n')
-	
-@client.command()
-async def developer():
-	await client.say('```The developer is ZhensHax#7992, some fixes by LaYellow#4241. © Bot by ZhensHax#7992 & LaYellow#4241```')
-	
-@client.command()
-async def info():
-     await client.say('```Developer: ZhensHax#7992. this most kanser bot in world```')
-     await client.say('```my owner mad cuz me is kanser me orang bgst wait a sec me is not orang so mean me bot yg kanset```')
-   
-
-@client.command()
-async def prefix():
-	await client.say('My command prefix is . gk need ask')
 	
 @client.command(pass_context = True)
 async def say(ctx, *, msg: str):
@@ -51,10 +33,6 @@ async def clear(ctx, amount):
     await client.delete_messages(messages)
 
     await client.say(str(amount) + ' message deleted expose ass')
-    
-@client.command()
-async def leet():
-	await client.say('leet soon r3b0rn')
 	
 @client.command()
 async def howgay( *args):
@@ -74,24 +52,24 @@ async def howgay( *args):
 @commands.check(has_permissions)
 async def ban(ctx,user:discord.Member):
 	await client.ban(user)
-	await client.say("Successfully banned {} cuz gay tons".format(user.name))
+	await client.say("Successfully banned {} from GrowLatvia Server!".format(user.name))
 	
 @client.command(pass_context = True)
 @commands.check(has_permissions)
 async def kick(ctx,user:discord.Member):
 	await client.kick(user)
-	await client.say("Successfully kick {} to 荷兰 ok bye tons".format(user.name))
+	await client.say("Successfully kick {} from GrowLatvia Server!".format(user.name))
 
 @client.command(pass_context=True)
 async def ping(ctx):
     t = await client.say('Pong!')
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
-    await client.edit_message(t, new_content='My heart is {}ms'.format(int(ms)))
+    await client.edit_message(t, new_content='{}ms'.format(int(ms)))
 
 
 @client.event
 async def on_ready():
-	await client.change_presence(game=discord.Game(name='菊花科技', type = 1))
+	await client.change_presence(game=discord.Game(name='Server Status: UP .help', type = 1))
 	
 	
 @client.command()
@@ -112,26 +90,7 @@ async def howretard( *args):
 async def fban(ctx,user:discord.Member):
 	await client.say('**User has been successfully banned.**')
 
-@client.command()
-async def donate():
-        await client.say('If you want to donate some money to the developer, here: https://paypal.me/zhenshax or you can donate gift cards too, DM ZhensHax#7992 aka the developer. Thank you!')
 
-@client.command()
-async def freenitro():
-        await client.say('here free ditro https://discord.gift/hknMN8777AvJl0 if get redeemed go buy yourself a ditro 5$ or deads')
-
-@client.command()
-async def respecto():
-        await client.say('pls respecto owner he nob code me cuz me suck')
-
-@client.command()
-async def time():
-        await client.say('```GMT +8 Malaysia Time.``` If want Malaysia time now go search google lol noob dont ask tons')
-
-@client.command()
-async def ads():
-        await client.say('Place your Ads here. 1$ per day, 7day/5.8$. Payment method PayPal. ik no one buy so i do this for fun only lol')
- 
         
 
 		
