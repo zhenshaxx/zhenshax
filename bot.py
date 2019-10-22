@@ -88,19 +88,7 @@ async def howretard( *args):
 async def fban(ctx,user:discord.Member):
 	await client.say('**User has been successfully banned.**')
 
-@client.command()
-async def serverstatus():
-        await client.say('>>> ***SERVER STATUS*** **STATUS: UP ** **REASON: NO REASON AVAILABLE** **LAST UPDATED: 01.31AM 22.10.2019 GTLV TIME**')
 
-@client.command()
-async def purchase():
-        await client.say('Check channel #purchase if you wish to purchase anything')
-
-@client.command()
-async def botdev():
-        await client.say('Bot is created and developed by ZhensHax#7992.')
-
- 
 
 
         
